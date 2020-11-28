@@ -1,0 +1,107 @@
+$colour1: #3a2e39;
+$colour2: #f8f8f8;
+$colour3: #247ba0;
+
+.navbar {
+  background-color: $colour3;
+  height: 10%;
+  padding: 14px 0;
+  text-align: center;
+  .title {
+    color: $colour2;
+    font-size: 28px;
+  }
+}
+
+.list-body {
+  height: 90%;
+  overflow-y: scroll;
+  padding: 14px 0;
+  .list-add-item {
+    color: $colour3;
+    cursor: pointer;
+    font-size: 21px;
+    text-align: center;
+
+    transition: 0.3s color ease-in-out;
+    i {
+      color: $colour3;
+
+      transition: 0.3s color ease-in-out;
+    }
+  }
+  .list-add-item:hover {
+    color: green;
+    i {
+      color: green;
+    }
+  }
+  .list-container {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+}
+
+.list-item {
+  border-bottom: 2px solid $colour3;
+  display: flex;
+  font-size: 21px;
+  justify-content: space-between;
+  margin: 7px 1% 3px 1%;
+  padding: 3px 2%;
+  .list-item-text {
+    font-weight: 400;
+  }
+  i {
+    cursor: pointer;
+    font-size: 35px;
+    margin-top: 6px;
+
+    transition: 0.3s color ease-in-out;
+  }
+  i:hover {
+    color: red;
+  }
+}
+
+.add-item-container {
+  background-color: rgba($color: $colour3, $alpha: 0.42);
+  height: 100vh;
+  left: 0;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  .add-item-modal {
+    background-color: $colour2;
+    margin: 70px auto;
+    padding: 21px 2% 42px 2%;
+    text-align: center;
+    width: 700px;
+    .modal-title {
+      color: $colour3;
+      font-size: 42px;
+    }
+    form {
+      input,
+      button {
+        border: 2px solid $colour1;
+        font-size: 28px;
+        height: 42px;
+        margin: 3px 0;
+        text-align: center;
+        width: 100%;
+      }
+      button {
+        background-color: $colour3;
+        color: $colour2;
+        cursor: pointer;
+      }
+    }
+    .close-toggle {
+      cursor: pointer;
+      font-size: 21px;
+      margin-top: 12px;
+    }
+  }
+}

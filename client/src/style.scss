@@ -1,0 +1,29 @@
+$colour1: #3a2e39;
+$colour2: #f8f8f8;
+$colour3: #247ba0;
+
+* {
+  box-sizing: border-box;
+  color: $colour1;
+  font-family: "Rockwell";
+  margin: 0;
+  outline: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+::-webkit-scrollbar-track {
+  background: $colour2;
+}
+::-webkit-scrollbar-thumb {
+  background: $colour3;
+}
+
+.app {
+  background-color: $colour2;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: hidden;
+}
